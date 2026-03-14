@@ -213,6 +213,18 @@ export default function Home() {
               <p className="text-lg text-foreground/70 leading-relaxed font-light">
                 THEO currently performs live with a band operating under the name <span className="text-accent font-semibold">Theo & The Dons</span>.
               </p>
+              <div className="mt-8 pt-8 border-t border-border/30">
+                <h3 className="text-2xl font-semibold text-accent mb-4">THEO & THE DONS</h3>
+                <p className="text-lg text-foreground/70 leading-relaxed font-light mb-4">
+                  "The Dons" were originally my band more than twenty-five years ago. We were young, driven by the urgency of music, playing wherever we could and learning what it meant to be on a stage.
+                </p>
+                <p className="text-lg text-foreground/70 leading-relaxed font-light mb-4">
+                  Years later, the name returned naturally — not as nostalgia, but as a continuation of that spirit.
+                </p>
+                <p className="text-lg text-foreground/70 leading-relaxed font-light">
+                  Today, Theo & The Dons brings those songs back to life with the same honesty and intensity, expanding THEO's music into a powerful live experience where intimacy and energy coexist.
+                </p>
+              </div>
             </div>
             <div
               className="relative w-full rounded-sm overflow-hidden animate-fade-in"
