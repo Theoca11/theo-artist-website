@@ -12,6 +12,11 @@ import { useState, useEffect } from "react";
  * - Large cinematic photography with film grain
  * - Generous whitespace and slow scroll animations
  * - Fade-in and parallax effects for emotional impact
+ * 
+ * Artist: THEO (João Gonçalves)
+ * Real name: João Gonçalves
+ * Origin: Caldas das Taipas, Guimarães, Portugal
+ * Genre: Indie rock, alternative rock, emotional songwriting
  */
 
 export default function Home() {
@@ -31,8 +36,8 @@ export default function Home() {
           <div className="text-xl font-bold tracking-tight">THEO</div>
           <div className="flex gap-8 items-center">
             <a href="#music" className="text-sm hover:text-accent transition-colors">Music</a>
-            <a href="#live" className="text-sm hover:text-accent transition-colors">Live</a>
             <a href="#about" className="text-sm hover:text-accent transition-colors">About</a>
+            <a href="#live" className="text-sm hover:text-accent transition-colors">Live</a>
             <a href="#contact" className="text-sm hover:text-accent transition-colors">Contact</a>
           </div>
         </div>
@@ -58,45 +63,54 @@ export default function Home() {
 
         <div className="relative z-10 text-center animate-fade-in-up">
           <h1 className="text-8xl md:text-9xl font-bold tracking-tighter mb-6">THEO</h1>
-          <p className="text-xl md:text-2xl text-foreground/80 mb-12 font-light">
-            Singer • Songwriter • Performer
+          <p className="text-xl md:text-2xl text-foreground/80 mb-4 font-light">
+            Portuguese singer-songwriter, composer and producer
           </p>
-          <Button
-            size="lg"
-            className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-6 text-lg"
-          >
-            Listen Now
-          </Button>
+          <p className="text-lg md:text-xl text-foreground/70 mb-12 font-light max-w-2xl mx-auto">
+            Raw songs, cinematic atmosphere and emotional truth.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button
+              size="lg"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-6 text-lg"
+            >
+              Listen
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-accent text-accent hover:bg-accent/10 px-8 py-6 text-lg"
+            >
+              Contact / Booking
+            </Button>
+          </div>
         </div>
       </section>
 
-      {/* Music Section */}
+      {/* Latest Release Section */}
       <section id="music" className="py-32 bg-background">
         <div className="container max-w-6xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div className="animate-fade-in-up">
               <h2 className="mb-6">Latest Release</h2>
-              <h3 className="text-3xl md:text-4xl font-bold text-accent mb-6">Another Door</h3>
+              <h3 className="text-4xl md:text-5xl font-bold text-accent mb-6">Another Door</h3>
+              <p className="text-sm text-foreground/60 mb-6 font-light">Release date: January 16, 2026</p>
               <p className="text-lg text-foreground/70 mb-8 leading-relaxed font-light">
-                A powerful new single exploring themes of introspection and emotional vulnerability. 
-                Another Door marks a new chapter in THEO's artistic journey, blending indie rock 
-                sensibilities with cinematic songwriting.
+                "Another Door" is the first single from THEO's upcoming album "Love Hate". 
+                Intimate and emotionally direct, the song opens the door to a new artistic chapter, 
+                exploring vulnerability, tension and the contradictions of love.
               </p>
               <div className="flex flex-col gap-4">
                 <a
-                  href="https://open.spotify.com/artist/6UwbXsC4zpzw4nOf1VU5Wm"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#"
                   className="inline-flex items-center gap-2 text-accent hover:text-accent/80 transition-colors"
                 >
                   <Music size={20} />
-                  Listen on Spotify
+                  Spotify
                   <ExternalLink size={16} />
                 </a>
                 <a
-                  href="https://music.apple.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#"
                   className="inline-flex items-center gap-2 text-accent hover:text-accent/80 transition-colors"
                 >
                   <Music size={20} />
@@ -104,9 +118,7 @@ export default function Home() {
                   <ExternalLink size={16} />
                 </a>
                 <a
-                  href="https://www.youtube.com/channel/UCtPRGOSBtGT2U_ucdpCnb2w"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#"
                   className="inline-flex items-center gap-2 text-accent hover:text-accent/80 transition-colors"
                 >
                   <Youtube size={20} />
@@ -127,26 +139,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Live Session Section */}
-      <section className="py-32 bg-secondary/20">
-        <div className="container max-w-6xl">
-          <div className="animate-fade-in-up">
-            <h2 className="mb-16 text-center">Live Session</h2>
-            <div className="relative w-full aspect-video bg-black rounded-sm overflow-hidden">
-              <iframe
-                className="w-full h-full"
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                title="THEO Live Session"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* About Section */}
-      <section id="about" className="py-32 bg-background">
+      <section id="about" className="py-32 bg-secondary/20">
         <div className="container max-w-4xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div
@@ -158,56 +152,79 @@ export default function Home() {
               }}
             />
             <div className="animate-fade-in-up">
-              <h2 className="mb-8">About THEO</h2>
+              <h2 className="mb-8">About</h2>
               <p className="text-lg text-foreground/70 mb-6 leading-relaxed font-light">
-                THEO is a Portuguese singer-songwriter from Guimarães, blending indie rock, 
-                alternative rock, and cinematic songwriting into a distinctive artistic voice. 
-                His music is deeply emotional, introspective, and poetic—exploring themes of 
-                love, loss, and human connection.
+                THEO is the artistic name of João Gonçalves, a Portuguese musician, songwriter and producer 
+                from Caldas das Taipas, Guimarães. His music is driven by emotion, identity, love, loss and inner conflict.
               </p>
               <p className="text-lg text-foreground/70 mb-6 leading-relaxed font-light">
-                Performing with his band and currently releasing music under the project 
-                "Theo & The Dons," THEO is preparing his upcoming album "Love Hate," 
-                which promises to be his most ambitious work to date. His live performances 
-                are known for their raw intensity and emotional authenticity.
+                He has released four studio records: <span className="text-accent font-semibold">Sinner</span> (2020), 
+                <span className="text-accent font-semibold"> The World is not The Same</span> (2021), 
+                <span className="text-accent font-semibold"> Estilhaços</span> (2022), and 
+                <span className="text-accent font-semibold"> Sombra</span> (2024). His music has received airplay on 
+                national radio and positive attention from the Portuguese music press.
               </p>
               <p className="text-lg text-foreground/70 leading-relaxed font-light">
-                With influences ranging from classic indie rock to contemporary singer-songwriters, 
-                THEO crafts music that resonates on a deeply human level, inviting listeners 
-                into intimate moments of vulnerability and strength.
+                He is currently working on the album <span className="text-accent font-semibold">"Love Hate"</span>, 
+                an intimate English-language record that marks a new artistic direction.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Band Section */}
-      <section className="py-32 bg-secondary/20">
+      {/* Live Band Section */}
+      <section className="py-32 bg-background">
         <div className="container max-w-6xl">
-          <div className="animate-fade-in-up">
-            <h2 className="mb-16 text-center">Theo & The Dons</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-              <div
-                className="relative h-96 md:h-full rounded-sm overflow-hidden"
-                style={{
-                  backgroundImage: `url('https://d2xsxph8kpxj0f.cloudfront.net/310519663429085971/igUmJg5nFrjZPq2TFev36u/theo-band-live-hQBW3YQzZkfXsdRA9kouvz.webp')`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                }}
-              />
-              <div>
-                <p className="text-lg text-foreground/70 mb-6 leading-relaxed font-light">
-                  Theo & The Dons represents a full-band evolution of THEO's solo work, 
-                  bringing dynamic energy and collaborative creativity to his cinematic songwriting. 
-                  The ensemble amplifies the emotional depth of each composition while maintaining 
-                  the intimate vulnerability that defines THEO's artistic identity.
-                </p>
-                <p className="text-lg text-foreground/70 leading-relaxed font-light">
-                  Together, they create a powerful live experience that bridges the gap between 
-                  introspective indie rock and stadium-ready performances.
-                </p>
-              </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div className="animate-fade-in-up">
+              <h2 className="mb-8">Live Band</h2>
+              <p className="text-lg text-foreground/70 mb-6 leading-relaxed font-light">
+                For the stage, THEO expands his songs with a full band format that brings depth, 
+                tension and dynamic intensity to the live experience.
+              </p>
+              <p className="text-lg text-foreground/70 mb-6 leading-relaxed font-light">
+                The project moves between intimacy and impact, preserving the emotional core of the songs 
+                while opening space for a bigger and more immersive sound.
+              </p>
+              <p className="text-lg text-foreground/70 leading-relaxed font-light">
+                THEO currently performs live with a band operating under the name <span className="text-accent font-semibold">Theo & The Dons</span>.
+              </p>
             </div>
+            <div
+              className="relative h-96 md:h-full rounded-sm overflow-hidden animate-fade-in"
+              style={{
+                backgroundImage: `url('https://d2xsxph8kpxj0f.cloudfront.net/310519663429085971/igUmJg5nFrjZPq2TFev36u/theo-band-live-hQBW3YQzZkfXsdRA9kouvz.webp')`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Venues Section */}
+      <section className="py-32 bg-secondary/20">
+        <div className="container max-w-4xl">
+          <h2 className="mb-16 text-center animate-fade-in-up">Notable Venues & Festivals</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {[
+              "Centro Cultural Vila Flor",
+              "Casa da Música",
+              "Rock no Rio Febras",
+              "Rock in Barco",
+              "Maus Hábitos",
+              "CLAV Live Sessions",
+              "CAAA",
+            ].map((venue, idx) => (
+              <div
+                key={idx}
+                className="border-l-2 border-accent pl-6 py-4 animate-fade-in-up"
+                style={{ animationDelay: `${idx * 50}ms` }}
+              >
+                <p className="text-lg text-foreground/80 font-light">{venue}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -215,66 +232,32 @@ export default function Home() {
       {/* Live Dates Section */}
       <section id="live" className="py-32 bg-background">
         <div className="container max-w-4xl">
-          <h2 className="mb-16 text-center animate-fade-in-up">Upcoming Shows</h2>
-          <div className="space-y-8">
-            {[
-              { date: "April 15, 2026", venue: "Sala Ibérica", city: "Guimarães, Portugal" },
-              { date: "May 3, 2026", venue: "Coliseu do Porto", city: "Porto, Portugal" },
-              { date: "May 20, 2026", venue: "Capitólio", city: "Lisboa, Portugal" },
-              { date: "June 10, 2026", venue: "Sala Apolo", city: "Barcelona, Spain" },
-            ].map((show, idx) => (
-              <div
-                key={idx}
-                className="border-b border-border pb-8 animate-fade-in-up"
-                style={{ animationDelay: `${idx * 100}ms` }}
-              >
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                  <div>
-                    <p className="text-accent font-semibold mb-2">{show.date}</p>
-                    <p className="text-xl font-light">{show.venue}</p>
-                    <p className="text-foreground/60 flex items-center gap-2 mt-1">
-                      <MapPin size={16} />
-                      {show.city}
-                    </p>
-                  </div>
-                  <Button variant="outline" className="border-accent text-accent hover:bg-accent/10">
-                    Get Tickets
-                  </Button>
-                </div>
-              </div>
-            ))}
+          <h2 className="mb-16 text-center animate-fade-in-up">Live Dates</h2>
+          <div className="text-center animate-fade-in-up">
+            <p className="text-xl text-foreground/70 font-light">
+              New live dates will be announced soon.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Press Section */}
+      {/* Press & Media Section */}
       <section className="py-32 bg-secondary/20">
         <div className="container max-w-4xl">
-          <h2 className="mb-16 text-center animate-fade-in-up">Press & Media</h2>
-          <div className="space-y-12">
+          <h2 className="mb-16 text-center animate-fade-in-up">Selected Highlights</h2>
+          <div className="space-y-6">
             {[
-              {
-                quote: "THEO's cinematic approach to songwriting sets him apart as one of Portugal's most promising indie rock artists.",
-                source: "Blitz Magazine",
-              },
-              {
-                quote: "With 'Love Hate,' THEO crafts an album that feels both intimate and expansive—a true artistic statement.",
-                source: "Sonic Scope",
-              },
-              {
-                quote: "His live performances are raw, emotional, and utterly captivating. THEO is an artist worth following.",
-                source: "Público",
-              },
+              "Four studio records released between 2020 and 2024",
+              "Airplay on Portuguese national radio",
+              "Live performances in notable Portuguese venues and festivals",
+              "Currently working on the upcoming album \"Love Hate\"",
             ].map((item, idx) => (
               <div
                 key={idx}
-                className="border-l-2 border-accent pl-6 animate-fade-in-up"
+                className="border-l-2 border-accent pl-6 py-4 animate-fade-in-up"
                 style={{ animationDelay: `${idx * 100}ms` }}
               >
-                <p className="text-lg text-foreground/80 mb-4 italic font-light">
-                  "{item.quote}"
-                </p>
-                <p className="text-accent font-semibold text-sm">— {item.source}</p>
+                <p className="text-lg text-foreground/80 font-light">• {item}</p>
               </div>
             ))}
           </div>
@@ -284,16 +267,16 @@ export default function Home() {
       {/* Contact Section */}
       <section id="contact" className="py-32 bg-background">
         <div className="container max-w-4xl text-center animate-fade-in-up">
-          <h2 className="mb-8">Get in Touch</h2>
+          <h2 className="mb-8">Booking & Contact</h2>
           <p className="text-lg text-foreground/70 mb-12 font-light">
-            For booking inquiries, press, or collaboration opportunities
+            For concerts, collaborations and professional inquiries.
           </p>
           <a
-            href="mailto:contact@theomusic.pt"
+            href="mailto:booking@theomusic.pt"
             className="inline-flex items-center gap-2 text-accent hover:text-accent/80 transition-colors text-lg"
           >
             <Mail size={24} />
-            contact@theomusic.pt
+            booking@theomusic.pt
           </a>
         </div>
       </section>
@@ -306,7 +289,7 @@ export default function Home() {
               <h3 className="font-semibold mb-4">Follow</h3>
               <div className="flex gap-4">
                 <a
-                  href="https://instagram.com/theo_music_"
+                  href="#"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-foreground/60 hover:text-accent transition-colors"
@@ -314,7 +297,7 @@ export default function Home() {
                   <Instagram size={20} />
                 </a>
                 <a
-                  href="https://youtube.com/@theomusic"
+                  href="#"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-foreground/60 hover:text-accent transition-colors"
@@ -322,7 +305,7 @@ export default function Home() {
                   <Youtube size={20} />
                 </a>
                 <a
-                  href="https://open.spotify.com/artist/6UwbXsC4zpzw4nOf1VU5Wm"
+                  href="#"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-foreground/60 hover:text-accent transition-colors"
@@ -335,15 +318,15 @@ export default function Home() {
               <h3 className="font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2 text-sm text-foreground/60">
                 <li><a href="#music" className="hover:text-accent transition-colors">Music</a></li>
-                <li><a href="#live" className="hover:text-accent transition-colors">Live Dates</a></li>
                 <li><a href="#about" className="hover:text-accent transition-colors">About</a></li>
+                <li><a href="#live" className="hover:text-accent transition-colors">Live</a></li>
               </ul>
             </div>
             <div>
               <h3 className="font-semibold mb-4">Contact</h3>
               <p className="text-sm text-foreground/60">
-                <a href="mailto:contact@theomusic.pt" className="hover:text-accent transition-colors">
-                  contact@theomusic.pt
+                <a href="mailto:booking@theomusic.pt" className="hover:text-accent transition-colors">
+                  booking@theomusic.pt
                 </a>
               </p>
             </div>
