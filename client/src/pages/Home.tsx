@@ -40,17 +40,21 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden pt-16">
-        <div
-          className="absolute inset-0 z-0"
+        <video
+          autoPlay
+          muted
+          loop
+          className="absolute inset-0 w-full h-full object-cover z-0"
           style={{
-            backgroundImage: `url('https://d2xsxph8kpxj0f.cloudfront.net/310519663429085971/igUmJg5nFrjZPq2TFev36u/theo-hero-performance-CN7zUWzxKHSiDgPGwtsjEb.webp')`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
             transform: `translateY(${scrollY * 0.5}px)`,
           }}
         >
-          <div className="absolute inset-0 bg-black/50"></div>
-        </div>
+          <source
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663429085971/igUmJg5nFrjZPq2TFev36u/f9d7196f-f333-4ec8-adcb-60690b8f8a86_b09e571c.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div className="absolute inset-0 bg-black/50 z-0"></div>
 
         <div className="relative z-10 text-center animate-fade-in-up">
           <h1 className="text-8xl md:text-9xl font-bold tracking-tighter mb-6">THEO</h1>
