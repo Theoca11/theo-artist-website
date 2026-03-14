@@ -77,8 +77,9 @@ export default function Home() {
             >
               <Button
                 size="lg"
-                className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-6 text-lg"
+                className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-6 text-lg flex items-center gap-2"
               >
+                <Music size={20} />
                 Listen to THEO
               </Button>
             </a>
