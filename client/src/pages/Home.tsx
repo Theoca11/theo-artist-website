@@ -153,7 +153,7 @@ export default function Home() {
             <div
               className="relative h-96 md:h-full rounded-sm overflow-hidden animate-fade-in"
               style={{
-                backgroundImage: `url('https://d2xsxph8kpxj0f.cloudfront.net/310519663429085971/igUmJg5nFrjZPq2TFev36u/theo-close-up-performance-Hui6ajTqZkkWiuq5n7jDCb.webp')`,
+                backgroundImage: `url('https://d2xsxph8kpxj0f.cloudfront.net/310519663429085971/igUmJg5nFrjZPq2TFev36u/IMG_2816_39095f2b.jpeg')`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
