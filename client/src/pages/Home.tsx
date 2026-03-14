@@ -215,11 +215,13 @@ export default function Home() {
               </p>
             </div>
             <div
-              className="relative h-96 md:h-full rounded-sm overflow-hidden animate-fade-in"
+              className="relative w-full rounded-sm overflow-hidden animate-fade-in"
               style={{
                 backgroundImage: `url('https://d2xsxph8kpxj0f.cloudfront.net/310519663429085971/igUmJg5nFrjZPq2TFev36u/f8c936a0-dda0-4a2d-99ef-008d9961ea1a_ddb15841.jpg')`,
-                backgroundSize: "cover",
+                backgroundSize: "contain",
                 backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                aspectRatio: "9/16",
               }}
             />
           </div>
