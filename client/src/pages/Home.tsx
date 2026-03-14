@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Mail, Music, MapPin, ExternalLink, Instagram, Youtube } from "lucide-react";
+import { Mail, Music, MapPin, ExternalLink, Instagram, Youtube, Facebook } from "lucide-react";
 import { useState, useEffect } from "react";
 
 /**
@@ -129,7 +129,9 @@ export default function Home() {
                   <ExternalLink size={16} />
                 </a>
                 <a
-                  href="#"
+                  href="https://music.apple.com/pt/artist/theo/1647384552"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-accent hover:text-accent/80 transition-colors"
                 >
                   <Music size={20} />
@@ -137,7 +139,9 @@ export default function Home() {
                   <ExternalLink size={16} />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.youtube.com/@Theo-zc8wc"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-accent hover:text-accent/80 transition-colors"
                 >
                   <Youtube size={20} />
@@ -307,30 +311,51 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div>
               <h3 className="font-semibold mb-4">Follow</h3>
-              <div className="flex gap-4">
+              <div className="flex gap-6">
                 <a
-                  href="#"
+                  href="https://open.spotify.com/intl-pt/artist/6UwbXsC4zpzw4nOf1VU5Wm?si=e8bRzewmQISp4909ld_8bg"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-foreground/60 hover:text-accent transition-colors"
+                  title="Spotify"
                 >
-                  <Instagram size={20} />
+                  <Music size={20} />
                 </a>
                 <a
-                  href="#"
+                  href="https://music.apple.com/pt/artist/theo/1647384552"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-foreground/60 hover:text-accent transition-colors"
+                  title="Apple Music"
+                >
+                  <Music size={20} />
+                </a>
+                <a
+                  href="https://www.youtube.com/@Theo-zc8wc"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-foreground/60 hover:text-accent transition-colors"
+                  title="YouTube"
                 >
                   <Youtube size={20} />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/theo_music_"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-foreground/60 hover:text-accent transition-colors"
+                  title="Instagram"
                 >
-                  <Music size={20} />
+                  <Instagram size={20} />
+                </a>
+                <a
+                  href="https://www.facebook.com/theomusico11/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-foreground/60 hover:text-accent transition-colors"
+                  title="Facebook"
+                >
+                  <Facebook size={20} />
                 </a>
               </div>
             </div>
