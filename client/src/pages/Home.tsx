@@ -216,6 +216,7 @@ export default function Home() {
               "Maus Hábitos",
               "CLAV Live Sessions",
               "CAAA",
+              "Banhos Velhos",
             ].map((venue, idx) => (
               <div
                 key={idx}
