@@ -199,6 +199,10 @@
     animation: fadeInUp 0.6s ease-out;
   }
 
+  .grayscale-image {
+    filter: grayscale(100%);
+  }
+
   .animate-fade-in {
     animation: fadeIn 0.6s ease-out;
   }

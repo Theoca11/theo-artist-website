@@ -49,7 +49,7 @@ export default function Home() {
           autoPlay
           muted
           loop
-          className="absolute inset-0 w-full h-full object-cover z-0"
+          className="absolute inset-0 w-full h-full object-cover z-0 grayscale-image"
           style={{
             transform: `translateY(${scrollY * 0.5}px)`,
           }}
@@ -151,7 +151,7 @@ export default function Home() {
               </div>
             </div>
             <div
-              className="relative h-96 md:h-full rounded-sm overflow-hidden animate-fade-in"
+              className="relative h-96 md:h-full rounded-sm overflow-hidden animate-fade-in grayscale-image"
               style={{
                 backgroundImage: `url('https://d2xsxph8kpxj0f.cloudfront.net/310519663429085971/igUmJg5nFrjZPq2TFev36u/IMG_2816_39095f2b.jpeg')`,
                 backgroundSize: "cover",
@@ -167,7 +167,7 @@ export default function Home() {
         <div className="container max-w-4xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div
-              className="relative h-96 md:h-full rounded-sm overflow-hidden animate-fade-in"
+              className="relative h-96 md:h-full rounded-sm overflow-hidden animate-fade-in grayscale-image"
               style={{
                 backgroundImage: `url('https://d2xsxph8kpxj0f.cloudfront.net/310519663429085971/igUmJg5nFrjZPq2TFev36u/E2D57E2D-78A5-4A34-85A4-B4D1C3430D8E_e3cda072.jpeg')`,
                 backgroundSize: "cover",
@@ -227,7 +227,7 @@ export default function Home() {
               </div>
             </div>
             <div
-              className="relative w-full rounded-sm overflow-hidden animate-fade-in"
+              className="relative w-full rounded-sm overflow-hidden animate-fade-in grayscale-image"
               style={{
                 backgroundImage: `url('https://d2xsxph8kpxj0f.cloudfront.net/310519663429085971/igUmJg5nFrjZPq2TFev36u/f8c936a0-dda0-4a2d-99ef-008d9961ea1a_ddb15841.jpg')`,
                 backgroundSize: "contain",
