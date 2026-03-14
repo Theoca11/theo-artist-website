@@ -45,20 +45,30 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden pt-16">
-        <video
-          autoPlay
-          muted
-          loop
-          className="absolute inset-0 w-full h-full object-cover z-0 grayscale-image"
+        <div
+          className="absolute inset-0 w-full h-full z-0 grayscale-image"
           style={{
-            transform: `translateY(${scrollY * 0.5}px)`,
+            backgroundImage: `url('https://d2xsxph8kpxj0f.cloudfront.net/310519663429085971/igUmJg5nFrjZPq2TFev36u/theo-hero-performance.jpg')`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
           }}
         >
-          <source
-            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663429085971/igUmJg5nFrjZPq2TFev36u/f9d7196f-f333-4ec8-adcb-60690b8f8a86_b09e571c.mp4"
-            type="video/mp4"
-          />
-        </video>
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover"
+            style={{
+              transform: `translateY(${scrollY * 0.5}px)`,
+            }}
+          >
+            <source
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663429085971/igUmJg5nFrjZPq2TFev36u/f9d7196f-f333-4ec8-adcb-60690b8f8a86_b09e571c.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
         <div className="absolute inset-0 bg-black/50 z-0"></div>
 
         <div className="relative z-10 text-center animate-fade-in-up">
