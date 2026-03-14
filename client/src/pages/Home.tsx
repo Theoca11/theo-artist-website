@@ -62,27 +62,39 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/50 z-0"></div>
 
         <div className="relative z-10 text-center animate-fade-in-up">
-          <h1 className="text-8xl md:text-9xl font-bold tracking-tighter mb-6">THEO</h1>
-          <p className="text-xl md:text-2xl text-foreground/80 mb-4 font-light">
+          <h1 className="text-8xl md:text-9xl font-bold tracking-tighter mb-4">THEO</h1>
+          <p className="text-2xl md:text-3xl text-accent mb-6 font-light italic">
+            Songs about love, conflict and the quiet battles within.
+          </p>
+          <p className="text-xl md:text-2xl text-foreground/80 mb-12 font-light">
             Portuguese singer-songwriter, composer and producer
           </p>
-          <p className="text-lg md:text-xl text-foreground/70 mb-12 font-light max-w-2xl mx-auto">
-            Raw songs, cinematic atmosphere and emotional truth.
-          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-6 text-lg"
+            <a
+              href="https://open.spotify.com/intl-pt/artist/6UwbXsC4zpzw4nOf1VU5Wm?si=e8bRzewmQISp4909ld_8bg"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Listen
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-accent text-accent hover:bg-accent/10 px-8 py-6 text-lg"
+              <Button
+                size="lg"
+                className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-6 text-lg"
+              >
+                Listen to THEO
+              </Button>
+            </a>
+            <a
+              href="https://open.spotify.com/intl-pt/track/41V0INDv0XxVTMrk7Avbbi?si=14f12528783a434e"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Contact / Booking
-            </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-accent text-accent hover:bg-accent/10 px-8 py-6 text-lg"
+              >
+                Latest Single — Another Door
+              </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -90,6 +102,11 @@ export default function Home() {
       {/* Latest Release Section */}
       <section id="music" className="py-32 bg-background">
         <div className="container max-w-6xl">
+          <div className="mb-16 text-center animate-fade-in-up">
+            <div className="inline-block bg-accent/20 border border-accent px-4 py-2 rounded-sm mb-6">
+              <p className="text-accent font-semibold text-sm tracking-wide">NEW SINGLE OUT NOW</p>
+            </div>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div className="animate-fade-in-up">
               <h2 className="mb-6">Latest Release</h2>
@@ -97,16 +114,18 @@ export default function Home() {
               <p className="text-sm text-foreground/60 mb-6 font-light">Release date: January 16, 2026</p>
               <p className="text-lg text-foreground/70 mb-8 leading-relaxed font-light">
                 "Another Door" is the first single from THEO's upcoming album "Love Hate". 
-                Intimate and emotionally direct, the song opens the door to a new artistic chapter, 
+                An intimate and emotionally direct song that opens a new chapter in his artistic path, 
                 exploring vulnerability, tension and the contradictions of love.
               </p>
               <div className="flex flex-col gap-4">
                 <a
-                  href="#"
+                  href="https://open.spotify.com/intl-pt/track/41V0INDv0XxVTMrk7Avbbi?si=14f12528783a434e"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-accent hover:text-accent/80 transition-colors"
                 >
                   <Music size={20} />
-                  Spotify
+                  Listen on Spotify
                   <ExternalLink size={16} />
                 </a>
                 <a
@@ -114,7 +133,7 @@ export default function Home() {
                   className="inline-flex items-center gap-2 text-accent hover:text-accent/80 transition-colors"
                 >
                   <Music size={20} />
-                  Apple Music
+                  Listen on Apple Music
                   <ExternalLink size={16} />
                 </a>
                 <a
@@ -122,7 +141,7 @@ export default function Home() {
                   className="inline-flex items-center gap-2 text-accent hover:text-accent/80 transition-colors"
                 >
                   <Youtube size={20} />
-                  YouTube
+                  Watch on YouTube
                   <ExternalLink size={16} />
                 </a>
               </div>
