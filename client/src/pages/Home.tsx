@@ -292,11 +292,11 @@ export default function Home() {
             For concerts, collaborations and professional inquiries.
           </p>
           <a
-            href="mailto:booking@theomusic.pt"
+            href="mailto:theomusico11@gmail.com"
             className="inline-flex items-center gap-2 text-accent hover:text-accent/80 transition-colors text-lg"
           >
             <Mail size={24} />
-            booking@theomusic.pt
+            theomusico11@gmail.com
           </a>
         </div>
       </section>
@@ -345,8 +345,8 @@ export default function Home() {
             <div>
               <h3 className="font-semibold mb-4">Contact</h3>
               <p className="text-sm text-foreground/60">
-                <a href="mailto:booking@theomusic.pt" className="hover:text-accent transition-colors">
-                  booking@theomusic.pt
+                <a href="mailto:theomusico11@gmail.com" className="hover:text-accent transition-colors">
+                  theomusico11@gmail.com
                 </a>
               </p>
             </div>
